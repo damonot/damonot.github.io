@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body, html {
+    background-color: black;
+    color: whitesmoke;
+    display: grid;
+    height: 100%;
+    font-family: Barlow;
+}
+
+div {
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    max-height: 500px;
+    width: 75%;
+    border: .5rem double whitesmoke;
+}
