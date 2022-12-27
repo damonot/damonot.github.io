@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
+
+:root {
+    --primary: #F3F3F3;
+}
+
 * {
 margin: 0;
 padding: 0;
 }
 
 body, html {
-    background-color: black;
-    color: whitesmoke;
+    background-color: #141414;
+    color: var(--primary);
     display: grid;
     min-height: 100%;
     font-family: Staatliches;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     overflow: auto;
 }
 
@@ -20,9 +25,15 @@ div {
     text-align: center;
 }
 
+a {
+    color: #119a5e;
+    text-decoration: double underline;
+}
+
 img {
     height: auto;
     max-height: 500px;
     width: 75%;
-    border: .5rem double whitesmoke;
+    border: .5rem double;
+    border-color: var(--primary);
 }
