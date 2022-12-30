@@ -47,9 +47,9 @@ img {
 }
 .links a {
     margin: 0 1.5rem 0 1.5rem;
-    transition: ease 1s;
+    transition: ease .75s;
 }
 
 .links a:hover {
-    color: rgb(255, 162, 0);
+    color: rgb(199, 131, 14);
 }
