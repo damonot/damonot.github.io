@@ -2,7 +2,8 @@
 
 
 :root {
-    --primary: #F3F3F3;
+    --light: #F3F3F3;
+    --dark: #141414
 }
 
 * {
@@ -11,8 +12,8 @@ padding: 0;
 }
 
 body, html {
-    background-color: #141414;
-    color: var(--primary);
+    background-color: var(--light) #141414;
+    color: var(--dark);
     display: grid;
     min-height: 100%;
     font-family: Staatliches;
