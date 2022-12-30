@@ -26,8 +26,10 @@ div {
 }
 
 a {
-    color: #119a5e;
-    text-decoration: double underline;
+    /* color: #119a5e; */
+    color: var(--primary);
+    /* text-decoration: double underline; */
+    text-decoration: none;
 }
 
 img {
@@ -36,4 +38,17 @@ img {
     width: 75%;
     border: .5rem double;
     border-color: var(--primary);
+}
+
+
+.links {
+    margin: 1rem 0 1rem 0;
+}
+.links a {
+    margin: 0 1.5rem 0 1.5rem;
+    transition: ease 1s;
+}
+
+.links a:hover {
+    color: rgb(255, 162, 0);
 }
