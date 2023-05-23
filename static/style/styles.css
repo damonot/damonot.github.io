@@ -41,6 +41,16 @@ img {
     border-color: var(--primary);
 }
 
+iframe {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
 
 .links {
     margin: 1rem 0 1rem 0;
