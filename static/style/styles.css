@@ -2,6 +2,7 @@
 
 
 :root {
+    --red: rgb(206, 0, 12);
     --light: #F3F3F3;
     --dark: #141414
 }
@@ -12,8 +13,8 @@ padding: 0;
 }
 
 body, html {
-    background-color: var(--light) #141414;
-    color: var(--dark);
+    background-color: var(--red);
+    color: var(--light);
     display: grid;
     min-height: 100%;
     font-family: Staatliches;
@@ -62,11 +63,11 @@ table, th, td {
 .links {
     margin: 1rem 0 1rem 0;
 }
-.links a {
+a {
     margin: 0 1.5rem 0 1.5rem;
-    transition: ease .75s;
+    transition: ease .33s;
 }
 
-.links a:hover {
-    color: rgb(199, 131, 14);
+a:hover {
+    color: var(--dark);
 }
