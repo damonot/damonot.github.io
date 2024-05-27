@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         dot.classList.add('dot');
         if (index === 0) dot.classList.add('active-dot');
         paginationContainer.appendChild(dot);
+
+        // Add click listener to each dot
+        dot.addEventListener('click', () => {
+            const itemStart = items[index].offsetLeft; // Get the starting point of the clicked item
+            container.scrollTo({ left: itemStart, behavior: 'smooth' }); // Scroll to the item
+        });
     });
 
     const dots = document.querySelectorAll('.dot');

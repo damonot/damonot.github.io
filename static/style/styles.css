@@ -47,7 +47,7 @@ img {
     max-height: 500px;
     width: 75%;
     border: .5rem double;
-    border-color: var(--primary);
+    border-color: var(--white);
 }
 
 iframe {
@@ -65,7 +65,6 @@ iframe {
 } .links a {
     margin-left: 1rem;
     margin-right: 1rem;
-    /* outline: 1px solid green; */
 }
 
 .nav {
@@ -105,19 +104,38 @@ iframe {
 }
 
 @media (max-width: 768px) {
-.pagination {
-    text-align: center;
-    padding: 10px 0;
-} .dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: var(--white);
-    border-radius: 50%;
-    display: inline-block;
-} .active-dot {
-    background-color: var(--dark); /* Active dot color */
-}
+    .pagination {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        align-items: center;
+    }
+    
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        background-color: var(--white);
+        border-radius: 50%;
+        display: inline-block;
+        transition: width .3s cubic-bezier(0.22, 1, 0.36, 1), height .3s cubic-bezier(0.22, 1, 0.36, 1), outline cubic-bezier(0.22, 1, 0.36, 1) .3s; /* Smooth transition for size change */
+        cursor: pointer; /* Changes the cursor to a pointer to indicate clickability */
+        outline: 3px solid transparent;
+    }
+    
+    .dot:hover {
+        outline: 5px solid var(--dark);
+    }
+    
+    .active-dot {
+        background-color: var(--dark); /* Active dot color */
+        width: 18px; /* Larger width for active dot */
+        height: 18px; /* Larger height for active dot */
+        cursor: pointer; /* Changes the cursor to a pointer to indicate clickability */
+        outline: 3px solid transparent !important;
+    }
+
+
 }
 
 /* Desktop view - Grid layout */
