@@ -6,7 +6,7 @@
 }
 
 :root {
-    --red: rgb(206, 0, 12);
+    --red: #ce000c;
     --white: #F3F3F3;
     --dark: #141414;
     --brown: #3f2212;
@@ -35,9 +35,7 @@ div {
 }
 
 a {
-    /* color: #119a5e; */
     color: var(--white);
-    /* text-decoration: double underline; */
     text-decoration: none;
     transition: ease .4s;
 } a:hover {
@@ -64,6 +62,10 @@ iframe {
 
 .links {
     margin: 1rem 0 1rem 0;
+} .links a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* outline: 1px solid green; */
 }
 
 .nav {
@@ -80,4 +82,53 @@ iframe {
 } .arrow {
     font-size: 3rem;
     outline: 1px solid green;
+}
+
+.responsive-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Hides scrollbar for IE, Edge, and Firefox */
+    scrollbar-width: none;  
+    /* Hides scrollbar for WebKit browsers */
+    -ms-overflow-style: none;  
+} .responsive-container .item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    width: 100%; /* Full width for carousel */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}  .responsive-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for WebKit browsers like Chrome and Safari */
+}
+
+@media (max-width: 768px) {
+.pagination {
+    text-align: center;
+    padding: 10px 0;
+} .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: inline-block;
+} .active-dot {
+    background-color: var(--dark); /* Active dot color */
+}
+}
+
+/* Desktop view - Grid layout */
+@media (min-width: 768px) {
+    .responsive-container {
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .responsive-container .item {
+        flex: 1 1 33%; /* Adjust number for more columns */
+        width: auto;
+    }
 }

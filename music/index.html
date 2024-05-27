@@ -10,6 +10,7 @@
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGG38DM7DD"></script>
+<script src="../shared/carousel-dots.js"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -22,19 +23,36 @@ gtag('config', 'G-GGG38DM7DD');
         <div class="nav">
             <a class="arrow" href="../">&larr;</a>
         </div>
-        <h1>
-            Rancid Rickie's <br> Rodeo Man
-        </h1>
-        <div class="links">
-        <h2><a href="https://open.spotify.com/track/3AskBiHJDRBSdbpFdLxIJF?si=14e03184463a4de4">Spotify</a>
-        <a href="https://music.apple.com/us/album/rancid-rickies-rodeo-man/1660893418?i=1660893419">Apple Music</a></h2>  
+        
+        <div class="responsive-container">
+            <div class="item">
+                <h1>
+                    Rancid Rickie's <br> Rodeo Man
+                </h1>
+                <div class="links">
+                <h2><a href="https://open.spotify.com/track/3AskBiHJDRBSdbpFdLxIJF?si=14e03184463a4de4">Spotify</a>
+                <a href="https://music.apple.com/us/album/rancid-rickies-rodeo-man/1660893418?i=1660893419">Apple Music</a></h2>  
+                </div>
+                <picture alt="art">
+                    <source srcset="../static/img/art-500.webp" media="(max-width: 799px)">
+                    <img src="../static/img/art-1000.webp" alt="">
+                </picture>
+            </div>
+            <div class="item"><h1>
+                Mantra <br> Living
+            </h1>
+            <div class="links">
+            <h2><a href="https://open.spotify.com/track/2MFeGYJbBqGj7YxwjSoDYe?si=d9abeb57ae8548c4">Spotify</a>
+            <a href="https://music.apple.com/us/album/waiting-radio-edit/1710590253?i=1710590254">Apple Music</a></h2>  
+            </div>
+            <picture alt="art">
+                <source srcset="../static/img/living-2.jpg" media="(max-width: 799px)">
+                <img src="../static/img/living-2.jpg" alt="">
+            </picture></div>
         </div>
-        <picture alt="art">
-            <source srcset="../static/img/art-500.webp" media="(max-width: 799px)">
-            <img src="../static/img/art-1000.webp" alt="">
-        </picture>
-  
-
+        <div class="pagination">
+            <!-- Pagination dots will be inserted here by JavaScript -->
+        </div>
     </div>
     </body>
 </html>
