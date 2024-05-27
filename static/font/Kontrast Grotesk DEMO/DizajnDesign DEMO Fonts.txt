@@ -1,31 +1,0 @@
-- - - - - - - - - -
-
-D I Z A J N D E S I G N    D E M O    F O N T S
-
-- - - - - - - - - -
-
-Demo Character setABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123 56789,.?
-
-- - - - - - - - - -
-
-English
-
-Demo versions are DizajnDesign fonts with reduced character set. You can test them directly in your computer.
-
-Fons are not allowed to be used for final projects without purchasing the full license of fonts.
-
-They contain no kerning and no OpenType functions.
-
-- - - - - - - - - -
-
-Slovensky
-
-Demo verzie sú DizajnDesign fonty s redukovaným počtom znakov. Sú určené na testovanie fontov priamo vo vašom počítači.
-
-Fonty nemôžu byť použité na finálne projekty bez zakúpenia licencie na plné verzie fontov.
-
-Neobsahujú kerning ani OpenType funkcie.
-
-- - - - - - - - - -
-
-DizajnDesign / www.dizajndesign.sk
