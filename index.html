@@ -7,27 +7,207 @@
     <meta name="description" content="Damon Otero Website; Musician; Technologist">
     <title>Damon Otero</title>
     <link rel="stylesheet" href="/static/style/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #F0EEDE;
+            font-family: 'NATS', sans-serif;
+        }
+        .header-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.25fr;
+            grid-column-gap: 0px;
+            margin-top: 1.5rem;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        } .header-grid * {
+            color: #000;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: -.08rem;
+        }
+        .nameplate {
+            font-size: 1.75em;
+        }
+        .nav-mobile {
+            justify-self: right;
+            gap: 2.5rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.25em;
+        } .nav-mobile a {
+            justify-self: right;
+            text-wrap: nowrap;
+        }
+        @media (max-width: 1023px) {
+            .nav-mobile {
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 0.5rem;
+            }
+        }
+        .main-title {
+            display: none;
+        }
+        .main-figma {
+            display: grid;
+            grid-template-columns: 1fr auto 1.25fr;
+            /* gap: 2rem; */
+            max-width: 1600px;
+            margin: 2rem auto;
+            margin-top: 8rem;
+            align-items: start;
+            min-height: 70vh;
+        }
+        .main-col {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .main-title {
+            font-family: 'NATS', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: -0.05em;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+        .main-img {
+            width: 100%;
+            max-width: 540px;
+            box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+            object-fit: cover;
+        }
+        .main-img-glacier { width: 90%; }
+        .main-img-7847d2eb { max-width: 264px; }
+        .main-img-0093 { max-width: 280px; }
+        .main-img-screenshot { max-width: 282px; }
+        .main-img-row-2 {
+          display: flex;
+          flex-direction: row;
+          gap: 2.5rem;
+          margin-bottom: 0;
+        }
+        .main-img-7847d2eb {
+          align-self: flex-end;
+          margin-top: 1.5rem;
+        }
+        .main-img-screenshot {
+          align-self: flex-start;
+          margin-top: 0;
+        }
+        .main-col-left {
+          align-items: flex-start;
+        }
+        .main-img-glacier {
+          margin-top: 2.5rem;
+        }
+        .main-col-right {
+          align-items: flex-start;
+        }
+        .main-img-row-right {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 2.5rem;
+          margin-top: 5.5rem;
+          margin-left: 1.5rem;
+        }
+        .main-img-0093 {
+          margin-top: 0;
+        }
+        .main-about {
+            font-family: 'NATS', sans-serif;
+            font-size: 1.25rem;
+            color: #000;
+            margin-top: 0;
+            line-height: 1.25em;
+            letter-spacing: 0.01em;
+            max-width: 100%;
+        }
+        .main-about-col {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          height: 100%;
+        }
+        @media (max-width: 1200px) {
+          .main-figma {
+            grid-template-columns: 1fr 1fr;
+          }
+          .main-about-col {
+            grid-column: span 2;
+            align-items: flex-start;
+            height: auto;
+          }
+        }
+        @media (max-width: 1024px) {
+            .main-figma {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .main-col { gap: 1.5rem; }
+            .main-title { font-size: 2rem; }
+            .main-about { font-size: 1rem; }
+            .main-about-col { 
+              justify-content: flex-start;
+              align-items: flex-start;
+              height: auto;
+            }
+            .main-img-row-2 {
+              flex-direction: column;
+              gap: 1rem;
+              margin-left: 0;
+              margin-bottom: 1rem;
+            }
+            .main-img-glacier {
+              margin-left: 0;
+              margin-top: 1.5rem;
+              margin-bottom: 1rem;
+            }
+            .main-img-row-right {
+              flex-direction: column;
+              gap: 1rem;
+              margin-top: 2rem;
+              margin-left: 0;
+            }
+        }
+    </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GGG38DM7DD"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-GGG38DM7DD');
-</script>
 <body>
-    <div>
-        <h1>
-            welcome
-        </h1>
-
-        <h2><a href="/music/">music</a></h2>
-        <h2><a href="/code/">code</a></h2>
-        <h2><a href="/blog/">blog</a></h2>
-    </div>
-    </body>
+    <header class="header-grid">
+        <div class="nameplate">DAMON OTERO</div>
+        <nav class="nav-mobile">
+            <a href="/music/">MUSIC</a>
+            <a href="/software/">SOFTWARE</a>
+            <a href="/camper-builds/">CAMPER BUILDING</a>
+            <a href="/calendar/">CONTACT</a>
+        </nav>
+    </header>
+    <main class="main-figma">
+      <div class="main-col main-col-left">
+        <h1 class="main-title">DAMON OTERO</h1>
+        <img class="main-img main-img-glacier" src="/static/img/glacier1-1.png" alt="glacier1-1">
+        <div class="main-img-row-2">
+          <img class="main-img main-img-7847d2eb" src="/static/img/7847d2eb.png" alt="7847d2eb">
+          <img class="main-img main-img-screenshot" src="/static/img/screenshot-2025-06-23.png" alt="screenshot-2025-06-23">
+        </div>
+      </div>
+      <div class="main-col main-col-right">
+        <div class="main-img-row-right">
+          <img class="main-img main-img-0093" src="/static/img/img-0093-1.png" alt="img-0093-1">
+        </div>
+      </div>
+      <section class="main-about-col">
+        <div class="main-about">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        </div>
+      </section>
+    </main>
+</body>
 </html>
-
-<!-- <iframe src="https://show.co/social-unlock/3C0azW28qSQXuDamSPxoO3/widget" width="100%" height="300" frameborder="0"></iframe> -->
