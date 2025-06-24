@@ -88,22 +88,23 @@
         .main-img {
             width: 100%;
             max-width: 540px;
-            box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
             object-fit: cover;
         }
         .main-img-glacier { width: 90%; }
         .main-img-7847d2eb { max-width: 264px; }
         .main-img-0093 { max-width: 280px; }
         .main-img-screenshot { max-width: 240px; }
+        .main-img-screenshot { max-width: 45%; }
+        .main-img-7847d2eb { max-width: 50%; }
         .main-img-row-2 {
           display: flex;
           flex-direction: row;
-          gap: 2.5rem;
+          gap: 1.5vw;
           margin-bottom: 0;
         }
         .main-img-7847d2eb {
           align-self: flex-end;
-          margin-top: 1.5rem;
+          margin-top: 1.5vw;
         }
         .main-img-screenshot {
           align-self: flex-start;
@@ -112,9 +113,10 @@
         .main-col-left {
           align-items: flex-start;
           /* min-width: 400px; */
+          gap: 50px;
         }
         .main-img-glacier {
-          margin-top: 2.5rem;
+          margin-top: 2.5vw;
         }
         .main-col-right {
           align-items: flex-start;
@@ -125,9 +127,9 @@
           display: flex;
           flex-direction: row;
           align-items: flex-start;
-          gap: 2.5rem;
-          margin-top: 5.5rem;
-          margin-left: 1.5rem;
+          gap: 2.5vw;
+          margin-top: 5.5vw;
+          margin-left: 1.5vw;
         }
         .main-img-0093 {
           margin-top: 0;
@@ -140,8 +142,8 @@
             line-height: 1.75em;
             letter-spacing: 0.05em;
             max-width: 100%;
-            margin-bottom: 12rem;
-            margin-left: 1.5rem;
+            margin-bottom: 12vw;
+            margin-left: 1.5vw;
         }
         .main-about-col {
           display: flex;
@@ -149,13 +151,24 @@
           justify-content: flex-start;
           height: 100%;
         }
-        @media (max-width: 1000px) {
+        @media (max-width: 1024px) {
+          .header-grid{
+            margin-left: 2.5vw;
+            margin-right: 4vw;
+          }
           .main-figma {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 1.5vw;
+            margin: 2vw auto;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            margin-left: 3vw;
+            margin-right: 2vw;
           }
           .main-col-left {
             grid-column-start: 1;
             grid-column-end: 4;
+            gap: 5%;
           }
          .main-col-right {
             grid-column-start: 4;
@@ -163,9 +176,30 @@
             max-width: 100%;
           }
           .main-about-col {
-            grid-column: span 2;
+            grid-column: span 5;
             align-items: flex-start;
             height: auto;
+            margin-top: 2vw;
+          }
+          .main-img-row-2,
+          .main-img-row-right {
+            gap: 1vw;
+            margin-left: 0;
+            margin-bottom: 1vw;
+            margin-top: 2vw;
+          }
+          .main-img-row-2{
+            gap: 1.75vw;
+          }
+          .main-img-glacier {
+            margin-left: 0;
+            margin-top: 1.5vw;
+            margin-bottom: .5vw;
+            max-width: 90%;
+          }
+          .main-img-7847d2eb {
+            margin-top: 2.5vw;
+            max-width: 50%;
           }
         }
         @media (max-width: 300px) {
@@ -202,6 +236,10 @@
             img {
              max-width: 100%;
             }           
+        }
+        img {
+            /* outline: 3px solid red; */
+            box-shadow: 0 7px 5px -5px rgba(0, 0, 0, 0.82);
         }
     </style>
 </head>
