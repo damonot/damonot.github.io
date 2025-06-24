@@ -44,7 +44,7 @@
             justify-self: right;
             text-wrap: nowrap;
         }
-        @media (max-width: 1023px) {
+        @media (max-width: 1024px) {
             .nav-mobile {
                 flex-direction: column;
                 align-items: flex-end;
@@ -63,8 +63,14 @@
             margin-top: 8rem;
             align-items: start;
             min-height: 70vh;
-            padding-left: 7em;
-            padding-right: 7em;
+            padding-left: 7vw;
+            padding-right: 7vw;
+        }
+        @media (max-width: 1400px) {
+            .main-figma {
+                padding-left: 1.5vw;
+                padding-right: 1.5vw;
+            }
         }
         .main-col {
             display: flex;
@@ -88,7 +94,7 @@
         .main-img-glacier { width: 90%; }
         .main-img-7847d2eb { max-width: 264px; }
         .main-img-0093 { max-width: 280px; }
-        .main-img-screenshot { max-width: 282px; }
+        .main-img-screenshot { max-width: 240px; }
         .main-img-row-2 {
           display: flex;
           flex-direction: row;
@@ -105,7 +111,7 @@
         }
         .main-col-left {
           align-items: flex-start;
-          min-width: 400px;
+          /* min-width: 400px; */
         }
         .main-img-glacier {
           margin-top: 2.5rem;
@@ -113,7 +119,7 @@
         .main-col-right {
           align-items: flex-start;
           max-width: 20vw;
-          min-width: 250px;
+          /* min-width: 250px; */
         }
         .main-img-row-right {
           display: flex;
@@ -143,9 +149,17 @@
           justify-content: flex-start;
           height: 100%;
         }
-        @media (max-width: 1200px) {
+        @media (max-width: 1000px) {
           .main-figma {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+          }
+          .main-col-left {
+            grid-column-start: 1;
+            grid-column-end: 3;
+          }
+         .main-col-right {
+            grid-column-start: 3;
+            grid-column-end: 5;
           }
           .main-about-col {
             grid-column: span 2;
@@ -153,7 +167,7 @@
             height: auto;
           }
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 300px) {
             .main-figma {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
@@ -184,6 +198,9 @@
               margin-top: 2rem;
               margin-left: 0;
             }
+            img {
+             max-width: 100%;
+            }           
         }
     </style>
 </head>
