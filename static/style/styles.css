@@ -72,18 +72,15 @@ iframe {
 h1, h2 {
     width: fit-content;
     margin: auto;
-}
-
-
-.item {
-    /* min-height: 450px; */
-    /* outline: 1px solid red; */
 } .item h1 {
-    height: 100px;
-    width: fit-content;
-    margin: auto;
-    /* outline: 1px solid red; */
+  height: 100px;
+  display: flex;
+  align-items: flex-end; /* aligns items to the bottom */
+  margin: 0; /* optional: remove default margin */
+  margin-left: auto;
+  margin-right: auto;
 }
+ 
 
 .music-icon-link img {
     border: none;
@@ -97,6 +94,7 @@ h1, h2 {
 .links {
     width: fit-content;
     margin: auto;
+    margin-top: 4%;
     margin-bottom: 4%;
     border-radius: 20px;
 } .links a {
