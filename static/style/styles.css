@@ -34,7 +34,6 @@ div {
 p {
     text-transform: none;
     text-align: center;
-    margin: auto;
     margin-top: 30%;
     max-width: 700px;
     font-size: 1.15rem;
@@ -107,7 +106,7 @@ h1, h2 {
 .nav {
     position: fixed;
     top: 0px;
-    left: 20px;
+    left: 15px;
 } .nav * {
     outline: none !important;
 }
@@ -116,6 +115,9 @@ h1, h2 {
     font-size: 2rem;
 } .arrow {
     font-size: 4rem;
+    background-color: var(--background);
+    padding-right: 10px;
+    border-radius: 15%;
 }
 
 .responsive-container {
@@ -151,7 +153,7 @@ h1, h2 {
     .dot {
         height: 10px;
         width: 10px;
-        margin: 0 5px;
+        margin: 0 9px;
         background-color: var(--brown);
         rotate: 45deg; /* Rotates the dot to appear as a diamond */
         display: inline-block;
